@@ -12,6 +12,7 @@ const Home = () => {
             <Link to="/profiles/gildong">gildong 프로필</Link>
             <br />
             <Link to="/articles"> 게시글 목록</Link>
+            <Link to="/mypage">마이페이지</Link>
         </div> 
     )
 }
