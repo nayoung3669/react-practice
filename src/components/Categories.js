@@ -6,6 +6,8 @@ const CategoriesBlock = styled.div`
     padding: 1rem;
     width: 668px;
     margin: 0 auto;
+    margin-top: 1rem;
+    justify-content: center;
     @media screen and (max-width: 668px) {
         width: 100%;
         overflow-x : auto;

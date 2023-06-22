@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { css, styled } from "styled-components"
 import axios from 'axios';
 import NewsItem from "./NewsItem"
 import { useState } from "react";
@@ -8,13 +8,21 @@ const NewsListBlock = styled.div`
     box-sizing: border-box;
     padding-bottom: 3rem;
     width: 668px;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
     background-color: lightgray;
     @media screen and (max-width: 668px){
         width: 100%;
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    ${props => props.active && css`
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        width: 668px;
+    `}
 `
 
 const NewsList = ({ category }) => {
@@ -37,7 +45,7 @@ const NewsList = ({ category }) => {
     },[category])
 
     if (loading) {
-        return <NewsListBlock>로딩중...</NewsListBlock>
+        return <NewsListBlock active={loading === true}>로딩중...</NewsListBlock>
     }
 
     if (!articles) {
