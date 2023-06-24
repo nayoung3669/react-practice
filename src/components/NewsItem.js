@@ -1,3 +1,4 @@
+import React from "react";
 import { styled } from "styled-components";
 
 const NewsItemBlock = styled.div`
@@ -53,5 +54,4 @@ const NewsItem = ({ article }) => {
     )
 }
 
-
-export default NewsItem
+export default React.memo(NewsItem)
