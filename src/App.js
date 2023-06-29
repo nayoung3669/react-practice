@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import "./App.css";
-import { Place } from "@material-ui/icons";
 
 function App() {
   const nextId = useRef(3);
