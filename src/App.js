@@ -49,7 +49,11 @@ function App() {
       <h2>TODO LIST</h2>
       <div className="cards">
         {todos.map((todo) => {
-          return <div className="card">{todo.text}</div>;
+          return (
+            <div key={todo.id} className="card">
+              {todo.text}
+            </div>
+          );
         })}
       </div>
     </div>
