@@ -1,0 +1,54 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 300px;
+  text-align: center;
+  width: 90%;
+  height: 350px;
+  background-color: rgb(238, 225, 237);
+  border-radius: 10px;
+}
+
+.form {
+  padding: 25px;
+  width: 50%;
+}
+
+.input {
+  border-radius: 10px;
+  height: 28px;
+  width: 50%;
+  padding-left: 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.btn {
+  border-radius: 20px;
+  height: 30px;
+  width: 15%;
+  margin-left: 10px;
+}
+
+.cards {
+  height: 200px;
+  width: 98%;
+  padding: 10px;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.card {
+  padding-top: 10px;
+  height: 70px;
+  width: 150px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 3px;
+}
